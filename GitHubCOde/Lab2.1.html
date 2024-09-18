@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="description"	content="Data Visualisation"/>
+	<meta name="keywords"		  content="HTML, CSS, D3"/>
+	<meta name="author"			  content="Billy Wong"/>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+	<title>Task 2.1 D3 Drawing With Data Binding</title>
+
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+        a:link, a:visited {
+            background-color: yellowgreen;
+            color: white;
+            padding: 6px 12px;
+            text-align: center;
+            font-size:12px;
+          }
+          
+          
+
+	</style>
+	
+
+</head>
+
+<body style="background-color: #f0fcff;">
+    <h1><b>Lab Exercise 2</b></h1>
+    <h1>The D3 Journey starts here...</h1>
+    <nav>
+        <ul>
+            <a href="Main.html" target="Main.html"><b>Main</b></a>
+
+            <a href="Lab2.1.html" target="Lab2.1.html"><b>Lab 2.1</b></a>
+
+            <a href="Lab2.2.html" target="Lab2.2.html"><b>Lab 2.2</b></a>
+
+            <a href="Lab2.3.html" target="Lab2.3.html"><b>Lab 2.3</b></a>
+
+            <a href="Lab2.4.html" target="Lab2.4.html"><b>Lab 2.4</b></a>
+        </ul>
+    </nav>
+
+    <script>
+
+    var dataset = [14, 5, 26, 23, 9];
+    
+        d3.select("body").selectAll("p")
+            .data(dataset)
+            .enter()
+            .append("p")
+            .style("color", function(d){
+                if(d > 10){
+                    return "red";
+                }         
+            })
+            .text(function(d){
+                if(d > 10){
+                    return "Warning: NAME watched "+ d + "cat videos today.";
+                }
+                else{
+                    return "NAME watched " + d + "cat videos today.";
+
+                }
+                
+            });
+    </script>
+    <footer class="w3-panel w3-leftbar w3-border-red w3-pale-red">COS30045
+        Data Visualisation<br>Billy Wong</footer>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="description"	content="Data Visualisation Exercise 1"/>
+	<meta name="keywords"		  content="HTML, CSS"/>
+	<meta name="author"			  content="Your name here"/>
+
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+	<title>Task 1.2 HTML and CSS Demo Page</title>
+	<!--Insert description of exercise  -->
+
+	<style>
+        a:link, a:visited {
+            background-color: yellowgreen;
+            color: white;
+            padding: 6px 12px;
+            text-align: center;
+            font-size:12px;
+          }
+          
+          
+
+	</style>
+
+</head>
+
+<body style="background-color: #f0fcff;">
+    <header>
+        <h1><b>Lab Exercise 1</b></h1>
+        
+        <nav>
+            <ul>
+                <a href="Main.html" target="Main.html"><b>Main</b></a>
+
+                <a href="Lab1.1.html" target="Lab1.1.html"><b>Lab 1.1</b></a>
+
+                <a href="Lab1.2.html" target="Lab1.2.html"><b>Lab 1.2</b></a>
+
+                <a href="Lab1.3.html" target="Lab1.3.html"><b>Lab 1.3</b></a>
+            </ul>
+        </nav>
+    </header>
+
+    <h1 style="font-family:'Times New Roman'; color:blue;"><b>Drawing Shapes with SVG</b></h1>
+	<h2>Using SVG, draw Japanese flag above the Bar chart</h2>
+
+	
+
+
+	<svg width="500" height="50" style="background-color: slategrey;">
+		<g transform="translate(20,0)">
+			<circle	 cx="25", cy="25", r="25" fill="cornflowerblue" />
+			<rect x="50", y="5", width="50", height="50" fill="rgb(100, 149, 237)"/>
+			<ellipse cx="140", cy="30", rx="40", ry="25" fill="rgba(100,149,237, 0.5)"/>
+			<Line x1="0" y1="30" x2="180" y2="30" stroke="black" stroke-width=5/>
+
+		</g>
+	</svg>
+	<br>
+
+	<svg width="300" height="200" style="background-color: white;">
+		<!-- White background for the flag -->
+		<rect width="300" height="200" fill="white" />
+	
+		<!-- Red circle for the flag -->
+		<circle cx="150" cy="100" r="60" fill="red" />
+	</svg>
+	<br>
+
+	<svg width="500" height="200" style="background-color: slategrey;">
+
+
+		<rect x="35", y="75", width="50", height="100" fill="rgb(100, 149, 237)"/>
+		<rect x="90", y="100", width="50", height="75" fill="rgb(100, 149, 237)"/>
+		<rect x="145", y="150", width="50", height="25" fill="rgb(100, 149, 237)"/>
+		<rect x="200", y="165", width="50", height="10" fill="rgb(100, 149, 237)"/>
+		<rect x="255", y="170", width="50", height="5" fill="rgb(100, 149, 237)"/>
+        <rect x="310", y="170", width="50", height="5" fill="rgb(100, 149, 237)"/>
+
+	</svg>
+	
+
+	<footer class="w3-panel w3-leftbar w3-border-red w3-pale-red" style="margin-top: 50px;">
+        COS30045 Data Visualisation<br>Billy Wong</footer>
+
+</body>
+</html>
