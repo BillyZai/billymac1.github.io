@@ -1,6 +1,6 @@
 function init() {
     var w = 500; // Dynamic width
-    var h = 400; // Dynamic height
+    var h = 500; // Dynamic height
 
     // Define a projection method (Mercator projection centered on coordinates)
     var projection = d3.geoMercator()
